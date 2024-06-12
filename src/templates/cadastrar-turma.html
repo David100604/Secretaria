@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Escolar</title>
+    <link rel="stylesheet" href="src/css/cadastro-aluno.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2 class="title"><span class="title-primary">Cadastro de Turma</span></h2>
+            <form class="form" method="POST" action="{{ url_for('cadastrar_turma') }}">
+                <div class="form-group">
+                    <label for="sala" class="description description-primary">Sala:</label>
+                    <input type="text" id="sala" class="form-input" name="sala">
+                </div>
+                <div class="form-group">
+                    <label for="uc" class="description description-primary">Unidade Curricular:</label>
+                    <input type="text" id="uc" class="form-input" name="uc">
+                </div>
+                <div class="form-group">
+                    <label for="horario" class="description description-primary">Horário:</label>
+                    <select id="horario" class="form-input" name="horario">
+                        <option value="Matutino">Matutino</option>
+                        <option value="Vespertino">Vespertino</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn"><a href="{{ url_for('index') }}" style="text-decoration: none; color: inherit;">Voltar</a></button>
+                    <button type="submit" class="btn">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secretaria Escolar</title>
+    <link rel="stylesheet" href="/src/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="second-column">
+                <h2 class="title title-primary">Bem-vindo de volta!!</h2>
+                <p class="description description-primary">Para manter-se conectado conosco</p>
+                <p class="description description-primary">Faça o login com suas informações pessoais:</p>
+                
+                <form class="form" method="POST" action="{{ url_for('login') }}">
+                    <label class="label-input" for="email">
+                        <i class="fas fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email" id="email" name="email">
+                    </label>
+                        
+                    <label class="label-input" for="senha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha" id="senha" name="senha">
+                    </label>
+                    
+                    <button type="submit" class="btn btn-second">Login</button>
+
+                    <div class="social-media">
+                        <ul class="list-social-media">
+                            <a class="link-social-media" href="https://www.facebook.com/" target="_blank">
+                                <li class="item-social-media">
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                            </a>
+                        
+                            <a class="link-social-media" href="https://web.whatsapp.com/" target="_blank">
+                                <li class="item-social-media">
+                                    <i class="fab fa-whatsapp"></i>
+                                </li>
+                            </a>
+                            
+                            <a class="link-social-media" href="https://www.linkedin.com" target="_blank">
+                                <li class="item-social-media">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

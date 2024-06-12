@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #242121 !important;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: #000 !important;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(58, 30, 122, 0.5) !important;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .card i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .btn-logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #f7f7f7;
+  }
+  
+  .btn-logout:hover {
+    color: #ff0000;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+  

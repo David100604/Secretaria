@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Secretaria Escolar - Cadastro de Professor</title>
+        <link rel="stylesheet" href="/src/css/cadastro-aluno.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h2 class="title"><span class="title-primary">Cadastro de Professor</span></h2>
+                <form class="form" method="POST" action="{{ url_for('cadastrar_professor') }}">
+                    <div class="form-group">
+                        <label for="nome" class="description description-primary">Nome:</label>
+                        <input type="text" id="nome" class="form-input" name="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="matricula" class="description description-primary">Matrícula:</label>
+                        <input type="text" id="matricula" class="form-input" name="matricula">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf" class="description description-primary">CPF:</label>
+                        <input type="text" id="cpf" class="form-input" name="cpf">
+                    </div>
+                    <div class="form-group">
+                        <label for="unidade" class="description description-primary">Unidade Curricular:</label>
+                        <input type="text" id="unidade" class="form-input" name="unidade">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn"><a href="javascript:window.history.go(-1)" style="text-decoration: none; color: inherit;">Voltar</a></button>
+                        <button type="submit" class="btn">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
