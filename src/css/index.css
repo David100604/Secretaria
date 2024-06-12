@@ -1,64 +1,99 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #242121 !important;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .card {
-    background-color: #000 !important;
-    border-radius: 8px;
-    box-shadow: 0 5px 5px rgba(58, 30, 122, 0.5) !important;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .card i {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .card h2 {
-    margin: 0;
-    font-size: 20px;
-    color: #fff;
-  }
-  
-  .btn-logout {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #f7f7f7;
-  }
-  
-  .btn-logout:hover {
-    color: #ff0000;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #242121 !important;
+  overflow-y: hidden;
+}
 
-  .card:hover{
-    transform: scale(1.05);
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.card {
+  background-color: #000 !important;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(58, 30, 122, 0.5) !important;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-roxo {
+  background-color: rgba(58, 30, 122, 1) !important;
+  color: white !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-roxo:hover {
+  background-color: rgba(58, 30, 122, 0.8) !important;
+  transform: scale(1.1);
+}
+
+.card i {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+h2{
+  margin-top: 1% !important;
+  margin-left: 3% !important ;
+  color: #fff;
+}
+
+.btn-logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f7f7f7;
+  transition: color 0.3s ease;
+}
+
+.btn-logout:hover {
+  color: #ff0000;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(58, 30, 122, 0.7);
+}
 
 .card-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-link:hover {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-  

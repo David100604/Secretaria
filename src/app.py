@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/src/css', static_folder='css')
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="",
+    password="Omen157@1013",
     database="db_secretaria"
 )
 
